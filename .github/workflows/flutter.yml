@@ -57,6 +57,9 @@ jobs:
             macOS) device=macos; prefix='' ;;
           esac
           $prefix python tool/native_acceptance.py --device "$device"
+      - name: Fresh application and optional generator rehearsal
+        if: matrix.os == 'macos-15' && matrix.flutter == '3.47.6'
+        run: python3 tool/quickstart.py | tee .local/flutter-validation/quickstart.log
       - name: Minimum toolchain Web JavaScript and Wasm build
         if: matrix.os == 'ubuntu-24.04' && matrix.flutter == '3.44.0'
         shell: bash
