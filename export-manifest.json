@@ -297,10 +297,10 @@
     "examples/gen_l10n/windows/runner/win32_window.h": "7dd03746b19dcf3542829b2f6e8ed40a2714ce5f2cb3b0e23f0118a2fcf62d62",
     "package.json": "ce4f2c4ce84ccdf4c364dba39b4ae443d52502377cdec6b0add0c4790d0e2ad8",
     "packages/localisync_sdk/.pubignore": "ee3b187b4fe0de7f7bc540cad77ffc901ccfe0431eaca6e3e3f4eb7dc6e1a1a6",
-    "packages/localisync_sdk/CHANGELOG.md": "b65a5496347bf6c4dbbac896c3fd3c6ccb47b72d07f7977fd2574b5e0f37a09d",
+    "packages/localisync_sdk/CHANGELOG.md": "0ca6f8dcc3f5849846ccc78ad3e6688e3bd8cbc530fd953bdfe496a3aac812a2",
     "packages/localisync_sdk/LICENSE": "7f59085b9167d9b978d1b82c0c0e5629c918c48e508c378189637048c3c85697",
     "packages/localisync_sdk/NOTICE": "44751c00ba261988e84f03a0e48fe52faaa4adae34b0ddaa7cf128084ec57da4",
-    "packages/localisync_sdk/README.md": "a3b30e1d3cc6602610fc5aff10f2161817eb53b0f7959b86119d303685335c2c",
+    "packages/localisync_sdk/README.md": "ce106d736497af338bfe1ed0d5fcc39bc552ef10c4cd1def2f5e39c2c0e8e505",
     "packages/localisync_sdk/benchmark/lookup.dart": "a87cffd2ce79f13ff92c203d483b3813a3a07e91a2193641990acf048e6f59c4",
     "packages/localisync_sdk/lib/core.dart": "5140eec1a9d1d2123834234b0126cb6db1405f289439eed96a78be3e0663c4f7",
     "packages/localisync_sdk/lib/localisync_sdk.dart": "80d9d3258c283f4511d35540d900db37702ce2fba9c2f90263e6b3088b9eb68d",
@@ -396,5 +396,5 @@
   },
   "preview": false,
   "schema": 1,
-  "sourceCommit": "6f7b08521d0d35609cab49dd45ff8fb98677d490"
+  "sourceCommit": "6af89d798a5b9c9dbdaa2f03d9ca8acb0b9b805d"
 }

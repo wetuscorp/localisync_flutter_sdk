@@ -7,14 +7,14 @@ Requires Flutter 3.44 / Dart 3.12 or later. MIT licensed.
 
 ## Installation
 
-Version 0.1.0 is undergoing release validation; registry publication is pending.
-After publication, install with:
+For a published release, install from pub.dev:
 
 ```sh
 flutter pub add localisync_sdk
 ```
 
-During validation, use this repository's workspace or a local path to this package.
+For source development, use the repository workspace or a local path to this package.
+The repository README records release availability and outstanding acceptance gates.
 There is no separate core dependency. `localisync_sdk.dart` provides Flutter integration;
 `core.dart` exposes platform-independent protocol and content types without importing Flutter.
 
