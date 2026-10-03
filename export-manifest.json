@@ -1,6 +1,6 @@
 {
   "files": {
-    ".github/workflows/flutter.yml": "00e6605e3e702b32b12a8b1b887248cdfc793e6f6ae2cc591af3e56b52915eb5",
+    ".github/workflows/flutter.yml": "a195f8cdfb6862c7fc2fae3e23e8ffa80319df54e53045fe787d1c95ce03b903",
     ".gitignore": "deaf71e24b43441f2abdc734f875997b4ea918b8347e14a10b2b216dcaa61941",
     ".node-version": "2722b61f414f07f08be7f1f1316012813818f26f1c40d6a24a748686cec7d2ff",
     "LICENSE": "7f59085b9167d9b978d1b82c0c0e5629c918c48e508c378189637048c3c85697",
@@ -326,7 +326,7 @@
     "packages/localisync_sdk/lib/src/platform/diagnostics_web.dart": "bf66cd2545e515c3db3fde3b8d7d2227c3af15a9cc5732ba072998c89fd8fd7c",
     "packages/localisync_sdk/lib/src/platform/factory_io.dart": "85d90aae642c4c39068f9d74eef7f96a9b3861d88dbececfb98a9c8018692d1c",
     "packages/localisync_sdk/lib/src/platform/factory_web.dart": "23ad3bbfb9e7a25aa8277c7c2774fb0b146b57475aa1f5ce39d12057b7a932d3",
-    "packages/localisync_sdk/lib/src/platform/preparer_io.dart": "392d002a2278a26b0abea2f52918afbefcfff3586def0313ee71a9dfd64e34f9",
+    "packages/localisync_sdk/lib/src/platform/preparer_io.dart": "469c1deb42392eedcb6d02282b3b53543139e893fe3877c55f0e7e54b6c94358",
     "packages/localisync_sdk/lib/src/platform/transport_io.dart": "5878a49868973c7285c57c1a7633f265503ce61eabfe784eaa198eb0908d25ba",
     "packages/localisync_sdk/lib/src/platform/transport_web.dart": "5946fbfc8fdf283970ebb2f927e22908d9bf17fc8f0efd30745d15a43181e704",
     "packages/localisync_sdk/lib/src/platform/verification_io.dart": "4b752e71e1929503f6a0afa3e7569eb7b8432dd8dfe085febfbaeaa5be1ed774",
@@ -388,12 +388,13 @@
     "tool/ios_acceptance.py": "372f60d20aa3474ec47017bf54f5d5c8448adcd337d1640ec000e508b05b237d",
     "tool/native_acceptance.py": "4492abaa319456c5a060b7f5fba57499f7db277d482d36decdafef9f45c42667",
     "tool/performance.py": "fda835181cac84f13dca8bd238cf692efd75aac0662ed8e05ee0aa6b09650a3a",
-    "tool/physical_restart.py": "2d3734b3cf786b2b4ad097590deebda0a92162274d825e2ec9a946a70e5960c9",
+    "tool/physical_restart.py": "353cd6ada23bd6143d78543db1b21f6c12908ed3f182f8ed1cf1f052d3cfea21",
     "tool/process_output.py": "65f1a31227550c23866eb5bcef805b768cf1757fa41460a905410a0ead94c1db",
     "tool/quickstart.py": "0d4429610fb87a01b38c54cda466dadd7ad455a594593bd66340730d031ce181",
+    "tool/test_physical_restart.py": "9c3e6592ad3c1a8e57145acfecc40a226d0e55f6710148526ba084138fa94c1d",
     "tool/verify.py": "86987d399cdc62d6781225f5bd8ca152add65a6fdb0e73742a41f3fa51753c18"
   },
   "preview": false,
   "schema": 1,
-  "sourceCommit": "e72e98cafd6aafd6c1643fb29181e1ba32a7d40e"
+  "sourceCommit": "6f7b08521d0d35609cab49dd45ff8fb98677d490"
 }
