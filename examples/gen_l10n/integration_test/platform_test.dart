@@ -10,7 +10,7 @@ import '../lib/main.dart';
 import '../lib/generated/localisync_messages.dart';
 
 void main() {
-  IntegrationTestWidgetsFlutterBinding.ensureInitialized();
+  final binding = IntegrationTestWidgetsFlutterBinding.ensureInitialized();
   testWidgets(
     'platform storage, verified activation and offline restart preserve application state',
     (tester) async {
@@ -49,6 +49,7 @@ void main() {
         expect(offline.status.persisted, true);
       });
       await offline.dispose();
+      binding.reportData = {'completedPlatformTests': 1};
     },
   );
 }
