@@ -4,7 +4,7 @@
     ".gitignore": "deaf71e24b43441f2abdc734f875997b4ea918b8347e14a10b2b216dcaa61941",
     ".node-version": "2722b61f414f07f08be7f1f1316012813818f26f1c40d6a24a748686cec7d2ff",
     "LICENSE": "7f59085b9167d9b978d1b82c0c0e5629c918c48e508c378189637048c3c85697",
-    "README.md": "0baeffe2216b31cd374bec1c11b63e3949cbacba1506adab7410655df99c5a71",
+    "README.md": "fa66f4fe5ffe3bfb332079cc316033a4f69713c5f4dd31a9e720b2a6085d15c8",
     "analysis_options.yaml": "402d0d0c45006db3204a39417e8040a3ec7400eb0bb3bc2444f8caf6a0f0e479",
     "examples/basic/.gitignore": "4a8d984279954e0461e0ffef9b9e7455340a0a762f227c01065a53482a83a4f1",
     "examples/basic/.metadata": "bb9eef7d3fba2e4f01d2f6d041d9426e9947d8b3adec6d61c8649736cb92149f",
@@ -300,7 +300,7 @@
     "packages/localisync_sdk/CHANGELOG.md": "0ca6f8dcc3f5849846ccc78ad3e6688e3bd8cbc530fd953bdfe496a3aac812a2",
     "packages/localisync_sdk/LICENSE": "7f59085b9167d9b978d1b82c0c0e5629c918c48e508c378189637048c3c85697",
     "packages/localisync_sdk/NOTICE": "44751c00ba261988e84f03a0e48fe52faaa4adae34b0ddaa7cf128084ec57da4",
-    "packages/localisync_sdk/README.md": "ce106d736497af338bfe1ed0d5fcc39bc552ef10c4cd1def2f5e39c2c0e8e505",
+    "packages/localisync_sdk/README.md": "999d5ab13127b77bab0569c50dc33291caa152472e65260ecc07479b4c4f963f",
     "packages/localisync_sdk/benchmark/lookup.dart": "a87cffd2ce79f13ff92c203d483b3813a3a07e91a2193641990acf048e6f59c4",
     "packages/localisync_sdk/lib/core.dart": "5140eec1a9d1d2123834234b0126cb6db1405f289439eed96a78be3e0663c4f7",
     "packages/localisync_sdk/lib/localisync_sdk.dart": "80d9d3258c283f4511d35540d900db37702ce2fba9c2f90263e6b3088b9eb68d",
@@ -396,5 +396,5 @@
   },
   "preview": false,
   "schema": 1,
-  "sourceCommit": "6af89d798a5b9c9dbdaa2f03d9ca8acb0b9b805d"
+  "sourceCommit": "cec3eda8b3d89439206162704a8c2f4024844628"
 }

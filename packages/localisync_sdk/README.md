@@ -54,6 +54,11 @@ parameter values are never reported; reporting failure preserves active translat
 Targets include Android, iOS, Web, macOS, Windows and Linux. Supported targets and actual
 validation evidence are distinct; see [platforms](https://docs.localisync.com/sdks/flutter/platforms/).
 
+A historical 571 ms iPhone stress-test frame interval remains unexplained. The latest
+physical run, after removing redundant cross-isolate contract copying, passed 30 cold/cache
+pairs per profile without intervals above 50 ms. This is a documented 0.1.0 limitation,
+not proof of the historical cause or a universal frame-performance guarantee.
+
 ## Development
 
 From the repository workspace run `flutter pub get` and `python3 tool/verify.py`.

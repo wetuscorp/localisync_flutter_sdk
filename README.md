@@ -3,8 +3,9 @@
 Verified translation delivery, synchronous in-memory reads and durable offline cache.
 The single runtime package is **localisync_sdk**. Requires Flutter 3.44 / Dart 3.12 or later.
 
-Version 0.1.0 is a release candidate under validation. Registry publication and the
-v0.1.0 tag are pending; do not treat repository availability as a published package.
+This checkout contains the 0.1.0 release sources. Check
+[pub.dev](https://pub.dev/packages/localisync_sdk) and GitHub Releases for published versions;
+repository availability alone does not establish registry publication.
 
 ## Getting started
 
@@ -36,8 +37,12 @@ Install pinned browser tooling using `pnpm install --frozen-lockfile`.
 CI runs unit, browser and native integrations; a configured job is not test evidence.
 
 Physical Android, minimum hardware/OS and production-network performance remain separate
-acceptance gates. Physical iPhone large-content frame investigations must be resolved before
-stable publication. See [maintenance](https://docs.localisync.com/sdks/flutter/maintenance/).
+acceptance gates. A historical 571 ms iPhone stress-test frame interval remains unexplained.
+After removing redundant cross-isolate contract copying, the latest physical run completed
+30 cold/cache pairs for each of three profiles without intervals above 50 ms. This does not
+explain the historical event or establish a universal frame guarantee. The limitation is
+accepted for 0.1.0; exact-candidate CI and package checks remain required. See
+[platform evidence](https://docs.localisync.com/sdks/flutter/platforms/).
 
 ## Maintenance and contributions
 
