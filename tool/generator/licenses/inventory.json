@@ -1,0 +1,242 @@
+[
+  {
+    "name": "_fe_analyzer_shared",
+    "version": "99.0.0",
+    "source": "hosted"
+  },
+  {
+    "name": "analyzer",
+    "version": "12.1.0",
+    "source": "hosted"
+  },
+  {
+    "name": "args",
+    "version": "2.7.0",
+    "source": "hosted"
+  },
+  {
+    "name": "async",
+    "version": "2.13.1",
+    "source": "hosted"
+  },
+  {
+    "name": "characters",
+    "version": "1.4.1",
+    "source": "hosted"
+  },
+  {
+    "name": "clock",
+    "version": "1.1.2",
+    "source": "hosted"
+  },
+  {
+    "name": "code_assets",
+    "version": "1.2.1",
+    "source": "hosted"
+  },
+  {
+    "name": "collection",
+    "version": "1.19.1",
+    "source": "hosted"
+  },
+  {
+    "name": "convert",
+    "version": "3.1.2",
+    "source": "hosted"
+  },
+  {
+    "name": "crypto",
+    "version": "3.0.7",
+    "source": "hosted"
+  },
+  {
+    "name": "cryptography",
+    "version": "2.9.0",
+    "source": "hosted"
+  },
+  {
+    "name": "ffi",
+    "version": "2.2.0",
+    "source": "hosted"
+  },
+  {
+    "name": "file",
+    "version": "7.0.1",
+    "source": "hosted"
+  },
+  {
+    "name": "flutter",
+    "version": "0.0.0",
+    "source": "sdk"
+  },
+  {
+    "name": "glob",
+    "version": "2.2.0",
+    "source": "hosted"
+  },
+  {
+    "name": "hooks",
+    "version": "2.0.2",
+    "source": "hosted"
+  },
+  {
+    "name": "http",
+    "version": "1.6.0",
+    "source": "hosted"
+  },
+  {
+    "name": "http_parser",
+    "version": "4.1.2",
+    "source": "hosted"
+  },
+  {
+    "name": "intl",
+    "version": "0.20.3",
+    "source": "hosted"
+  },
+  {
+    "name": "jni",
+    "version": "1.1.0",
+    "source": "hosted"
+  },
+  {
+    "name": "jni_flutter",
+    "version": "1.0.3",
+    "source": "hosted"
+  },
+  {
+    "name": "jni_util",
+    "version": "1.0.0",
+    "source": "hosted"
+  },
+  {
+    "name": "logging",
+    "version": "1.3.0",
+    "source": "hosted"
+  },
+  {
+    "name": "material_color_utilities",
+    "version": "0.13.0",
+    "source": "hosted"
+  },
+  {
+    "name": "meta",
+    "version": "1.19.0",
+    "source": "hosted"
+  },
+  {
+    "name": "objective_c",
+    "version": "9.5.0",
+    "source": "hosted"
+  },
+  {
+    "name": "package_config",
+    "version": "2.2.0",
+    "source": "hosted"
+  },
+  {
+    "name": "path",
+    "version": "1.9.1",
+    "source": "hosted"
+  },
+  {
+    "name": "path_provider",
+    "version": "2.1.6",
+    "source": "hosted"
+  },
+  {
+    "name": "path_provider_android",
+    "version": "2.3.1",
+    "source": "hosted"
+  },
+  {
+    "name": "path_provider_foundation",
+    "version": "2.6.0",
+    "source": "hosted"
+  },
+  {
+    "name": "path_provider_linux",
+    "version": "2.2.2",
+    "source": "hosted"
+  },
+  {
+    "name": "path_provider_platform_interface",
+    "version": "2.1.3",
+    "source": "hosted"
+  },
+  {
+    "name": "path_provider_windows",
+    "version": "2.3.0",
+    "source": "hosted"
+  },
+  {
+    "name": "platform",
+    "version": "3.2.0",
+    "source": "hosted"
+  },
+  {
+    "name": "plugin_platform_interface",
+    "version": "2.1.8",
+    "source": "hosted"
+  },
+  {
+    "name": "pub_semver",
+    "version": "2.2.1",
+    "source": "hosted"
+  },
+  {
+    "name": "record_use",
+    "version": "0.6.0",
+    "source": "hosted"
+  },
+  {
+    "name": "sky_engine",
+    "version": "0.0.0",
+    "source": "sdk"
+  },
+  {
+    "name": "source_span",
+    "version": "1.10.2",
+    "source": "hosted"
+  },
+  {
+    "name": "string_scanner",
+    "version": "1.4.1",
+    "source": "hosted"
+  },
+  {
+    "name": "term_glyph",
+    "version": "1.2.2",
+    "source": "hosted"
+  },
+  {
+    "name": "typed_data",
+    "version": "1.4.0",
+    "source": "hosted"
+  },
+  {
+    "name": "vector_math",
+    "version": "2.4.3",
+    "source": "hosted"
+  },
+  {
+    "name": "watcher",
+    "version": "1.2.1",
+    "source": "hosted"
+  },
+  {
+    "name": "web",
+    "version": "1.1.1",
+    "source": "hosted"
+  },
+  {
+    "name": "xdg_directories",
+    "version": "1.1.0",
+    "source": "hosted"
+  },
+  {
+    "name": "yaml",
+    "version": "3.1.4",
+    "source": "hosted"
+  }
+]

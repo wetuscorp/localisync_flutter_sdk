@@ -1,0 +1,20 @@
+{
+  "@@locale": "en",
+  "title": "Localisync translations",
+  "greeting": "Hello {name}",
+  "@greeting": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "basket": "{count, plural, one {One item} other {# items}}",
+  "@basket": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  }
+}

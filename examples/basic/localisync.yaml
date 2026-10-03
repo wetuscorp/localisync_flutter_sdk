@@ -1,0 +1,7 @@
+arb:
+  en: lib/l10n/app_en.arb
+  tr: lib/l10n/app_tr.arb
+fallbacks:
+  en: null
+  tr: en
+output: lib/generated/localisync_messages.dart

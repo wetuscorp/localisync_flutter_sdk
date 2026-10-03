@@ -1,0 +1,18 @@
+{
+  "plurals": {
+    "source": "https://raw.githubusercontent.com/unicode-org/cldr-json/48.2.1/cldr-json/cldr-core/supplemental/plurals.json",
+    "sha256": "6c0a48e9bcfc25856f90202f703c2c7f89c105d6868f7712a943a6ed2dcbe8f4"
+  },
+  "ordinals": {
+    "source": "https://raw.githubusercontent.com/unicode-org/cldr-json/48.2.1/cldr-json/cldr-core/supplemental/ordinals.json",
+    "sha256": "8a945afc483a4f677fb5641f08a2ccc62948ee05f316d21996be6561c2f83155"
+  },
+  "parentLocales": {
+    "source": "https://raw.githubusercontent.com/unicode-org/cldr-json/48.2.1/cldr-json/cldr-core/supplemental/parentLocales.json",
+    "sha256": "5a3f056a70ff52af7a25681a670ec860d785d98894934d3a9e5332508c23651e"
+  },
+  "aliases": {
+    "source": "https://raw.githubusercontent.com/unicode-org/cldr-json/48.2.1/cldr-json/cldr-core/supplemental/aliases.json",
+    "sha256": "b7011c866f27502ed6f160ca83f2a83fa42bce9fdc2176e60e2c6630961d877c"
+  }
+}

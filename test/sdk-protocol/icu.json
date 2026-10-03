@@ -1,0 +1,1572 @@
+{
+  "version": 1,
+  "valid": [
+    {
+      "message": "Hello {name}",
+      "locale": "en",
+      "args": {
+        "name": "Ada"
+      },
+      "parameters": [
+        {
+          "name": "name",
+          "type": "text"
+        }
+      ],
+      "expected": "Hello Ada"
+    },
+    {
+      "message": "You''re '{name}' {name} }",
+      "locale": "en",
+      "args": {
+        "name": "Ada"
+      },
+      "parameters": [
+        {
+          "name": "name",
+          "type": "text"
+        }
+      ],
+      "expected": "You're {name} Ada }"
+    },
+    {
+      "message": "'<b>' {name}",
+      "locale": "en",
+      "args": {
+        "name": "Ada"
+      },
+      "parameters": [
+        {
+          "name": "name",
+          "type": "text"
+        }
+      ],
+      "expected": "<b> Ada"
+    },
+    {
+      "message": "{n, plural, offset:-1 =+1 {Exactly one} one {# one} other {# items}}",
+      "locale": "en",
+      "args": {
+        "n": 1
+      },
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "Exactly one"
+    },
+    {
+      "message": "{n, plural, offset:-1 one {# one} other {# items}}",
+      "locale": "en",
+      "args": {
+        "n": 1
+      },
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "2 items"
+    },
+    {
+      "message": "{n, plural, offset:1 one {'#' #} other {{gender, select, female {She has #} other {They have #}}}}",
+      "locale": "en",
+      "args": {
+        "n": 5,
+        "gender": "female"
+      },
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        },
+        {
+          "name": "gender",
+          "type": "text"
+        }
+      ],
+      "expected": "She has #"
+    },
+    {
+      "message": "{s, select, 中文 {Chinese} other {Other}}",
+      "locale": "zh",
+      "args": {
+        "s": "中文"
+      },
+      "parameters": [
+        {
+          "name": "s",
+          "type": "text"
+        }
+      ],
+      "expected": "Chinese"
+    },
+    {
+      "locale": "en",
+      "args": {
+        "n": 0
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "en",
+      "args": {
+        "n": 1
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "one"
+    },
+    {
+      "locale": "en",
+      "args": {
+        "n": 2
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "en",
+      "args": {
+        "n": 3
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "en",
+      "args": {
+        "n": 5
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "en",
+      "args": {
+        "n": 11
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "en",
+      "args": {
+        "n": 21
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "en",
+      "args": {
+        "n": 1.2
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "fr",
+      "args": {
+        "n": 0
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "one"
+    },
+    {
+      "locale": "fr",
+      "args": {
+        "n": 1
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "one"
+    },
+    {
+      "locale": "fr",
+      "args": {
+        "n": 2
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "fr",
+      "args": {
+        "n": 3
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "fr",
+      "args": {
+        "n": 5
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "fr",
+      "args": {
+        "n": 11
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "fr",
+      "args": {
+        "n": 21
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "fr",
+      "args": {
+        "n": 1.2
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "one"
+    },
+    {
+      "locale": "ru",
+      "args": {
+        "n": 0
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "many"
+    },
+    {
+      "locale": "ru",
+      "args": {
+        "n": 1
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "one"
+    },
+    {
+      "locale": "ru",
+      "args": {
+        "n": 2
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "few"
+    },
+    {
+      "locale": "ru",
+      "args": {
+        "n": 3
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "few"
+    },
+    {
+      "locale": "ru",
+      "args": {
+        "n": 5
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "many"
+    },
+    {
+      "locale": "ru",
+      "args": {
+        "n": 11
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "many"
+    },
+    {
+      "locale": "ru",
+      "args": {
+        "n": 21
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "one"
+    },
+    {
+      "locale": "ru",
+      "args": {
+        "n": 1.2
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "ar",
+      "args": {
+        "n": 0
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "zero"
+    },
+    {
+      "locale": "ar",
+      "args": {
+        "n": 1
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "one"
+    },
+    {
+      "locale": "ar",
+      "args": {
+        "n": 2
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "two"
+    },
+    {
+      "locale": "ar",
+      "args": {
+        "n": 3
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "few"
+    },
+    {
+      "locale": "ar",
+      "args": {
+        "n": 5
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "few"
+    },
+    {
+      "locale": "ar",
+      "args": {
+        "n": 11
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "many"
+    },
+    {
+      "locale": "ar",
+      "args": {
+        "n": 21
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "many"
+    },
+    {
+      "locale": "ar",
+      "args": {
+        "n": 1.2
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "pt-PT",
+      "args": {
+        "n": 0
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "pt-PT",
+      "args": {
+        "n": 1
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "one"
+    },
+    {
+      "locale": "pt-PT",
+      "args": {
+        "n": 2
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "pt-PT",
+      "args": {
+        "n": 3
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "pt-PT",
+      "args": {
+        "n": 5
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "pt-PT",
+      "args": {
+        "n": 11
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "pt-PT",
+      "args": {
+        "n": 21
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "pt-PT",
+      "args": {
+        "n": 1.2
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "pt-AO",
+      "args": {
+        "n": 0
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "one"
+    },
+    {
+      "locale": "pt-AO",
+      "args": {
+        "n": 1
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "one"
+    },
+    {
+      "locale": "pt-AO",
+      "args": {
+        "n": 2
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "pt-AO",
+      "args": {
+        "n": 3
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "pt-AO",
+      "args": {
+        "n": 5
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "pt-AO",
+      "args": {
+        "n": 11
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "pt-AO",
+      "args": {
+        "n": 21
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "pt-AO",
+      "args": {
+        "n": 1.2
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "one"
+    },
+    {
+      "locale": "cy",
+      "args": {
+        "n": 0
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "zero"
+    },
+    {
+      "locale": "cy",
+      "args": {
+        "n": 1
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "one"
+    },
+    {
+      "locale": "cy",
+      "args": {
+        "n": 2
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "two"
+    },
+    {
+      "locale": "cy",
+      "args": {
+        "n": 3
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "few"
+    },
+    {
+      "locale": "cy",
+      "args": {
+        "n": 5
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "cy",
+      "args": {
+        "n": 11
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "cy",
+      "args": {
+        "n": 21
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "cy",
+      "args": {
+        "n": 1.2
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "sl",
+      "args": {
+        "n": 0
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "sl",
+      "args": {
+        "n": 1
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "one"
+    },
+    {
+      "locale": "sl",
+      "args": {
+        "n": 2
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "two"
+    },
+    {
+      "locale": "sl",
+      "args": {
+        "n": 3
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "few"
+    },
+    {
+      "locale": "sl",
+      "args": {
+        "n": 5
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "sl",
+      "args": {
+        "n": 11
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "sl",
+      "args": {
+        "n": 21
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "sl",
+      "args": {
+        "n": 1.2
+      },
+      "message": "{n, plural, zero {zero} one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "few"
+    },
+    {
+      "locale": "en",
+      "args": {
+        "n": 1
+      },
+      "message": "{n, selectordinal, one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "one"
+    },
+    {
+      "locale": "en",
+      "args": {
+        "n": 2
+      },
+      "message": "{n, selectordinal, one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "two"
+    },
+    {
+      "locale": "en",
+      "args": {
+        "n": 3
+      },
+      "message": "{n, selectordinal, one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "few"
+    },
+    {
+      "locale": "en",
+      "args": {
+        "n": 4
+      },
+      "message": "{n, selectordinal, one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "en",
+      "args": {
+        "n": 11
+      },
+      "message": "{n, selectordinal, one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "en",
+      "args": {
+        "n": 12
+      },
+      "message": "{n, selectordinal, one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "en",
+      "args": {
+        "n": 13
+      },
+      "message": "{n, selectordinal, one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "en",
+      "args": {
+        "n": 21
+      },
+      "message": "{n, selectordinal, one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "one"
+    },
+    {
+      "locale": "en",
+      "args": {
+        "n": 22
+      },
+      "message": "{n, selectordinal, one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "two"
+    },
+    {
+      "locale": "en",
+      "args": {
+        "n": 23
+      },
+      "message": "{n, selectordinal, one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "few"
+    },
+    {
+      "locale": "fr",
+      "args": {
+        "n": 1
+      },
+      "message": "{n, selectordinal, one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "one"
+    },
+    {
+      "locale": "fr",
+      "args": {
+        "n": 2
+      },
+      "message": "{n, selectordinal, one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "fr",
+      "args": {
+        "n": 3
+      },
+      "message": "{n, selectordinal, one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "fr",
+      "args": {
+        "n": 4
+      },
+      "message": "{n, selectordinal, one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "fr",
+      "args": {
+        "n": 11
+      },
+      "message": "{n, selectordinal, one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "fr",
+      "args": {
+        "n": 12
+      },
+      "message": "{n, selectordinal, one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "fr",
+      "args": {
+        "n": 13
+      },
+      "message": "{n, selectordinal, one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "fr",
+      "args": {
+        "n": 21
+      },
+      "message": "{n, selectordinal, one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "fr",
+      "args": {
+        "n": 22
+      },
+      "message": "{n, selectordinal, one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "fr",
+      "args": {
+        "n": 23
+      },
+      "message": "{n, selectordinal, one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "it",
+      "args": {
+        "n": 1
+      },
+      "message": "{n, selectordinal, one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "it",
+      "args": {
+        "n": 2
+      },
+      "message": "{n, selectordinal, one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "it",
+      "args": {
+        "n": 3
+      },
+      "message": "{n, selectordinal, one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "it",
+      "args": {
+        "n": 4
+      },
+      "message": "{n, selectordinal, one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "it",
+      "args": {
+        "n": 11
+      },
+      "message": "{n, selectordinal, one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "many"
+    },
+    {
+      "locale": "it",
+      "args": {
+        "n": 12
+      },
+      "message": "{n, selectordinal, one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "it",
+      "args": {
+        "n": 13
+      },
+      "message": "{n, selectordinal, one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "it",
+      "args": {
+        "n": 21
+      },
+      "message": "{n, selectordinal, one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "it",
+      "args": {
+        "n": 22
+      },
+      "message": "{n, selectordinal, one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "it",
+      "args": {
+        "n": 23
+      },
+      "message": "{n, selectordinal, one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "cy",
+      "args": {
+        "n": 1
+      },
+      "message": "{n, selectordinal, one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "one"
+    },
+    {
+      "locale": "cy",
+      "args": {
+        "n": 2
+      },
+      "message": "{n, selectordinal, one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "two"
+    },
+    {
+      "locale": "cy",
+      "args": {
+        "n": 3
+      },
+      "message": "{n, selectordinal, one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "few"
+    },
+    {
+      "locale": "cy",
+      "args": {
+        "n": 4
+      },
+      "message": "{n, selectordinal, one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "few"
+    },
+    {
+      "locale": "cy",
+      "args": {
+        "n": 11
+      },
+      "message": "{n, selectordinal, one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "cy",
+      "args": {
+        "n": 12
+      },
+      "message": "{n, selectordinal, one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "cy",
+      "args": {
+        "n": 13
+      },
+      "message": "{n, selectordinal, one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "cy",
+      "args": {
+        "n": 21
+      },
+      "message": "{n, selectordinal, one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "cy",
+      "args": {
+        "n": 22
+      },
+      "message": "{n, selectordinal, one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    },
+    {
+      "locale": "cy",
+      "args": {
+        "n": 23
+      },
+      "message": "{n, selectordinal, one {one} two {two} few {few} many {many} other {other}}",
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "other"
+    }
+  ],
+  "invalid": [
+    "{n, plural, =1.5 {Bad} other {#}}",
+    "{n, plural, offset:1.5 other {#}}",
+    "{n, number}",
+    "<b>{n}</b>",
+    "{n, plural, one {One}}",
+    "{n, plural, other {#} other {duplicate}}"
+  ]
+}

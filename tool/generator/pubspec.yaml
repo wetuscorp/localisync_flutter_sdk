@@ -1,0 +1,14 @@
+name: localisync_generator
+description: Typed translation and Flutter localization adapter generation.
+version: 0.1.0
+publish_to: none
+repository: https://github.com/wetuscorp/localisync_flutter_sdk
+resolution: workspace
+environment:
+  sdk: '>=3.12.0 <4.0.0'
+dependencies:
+  analyzer: '>=12.0.0 <13.0.0'
+  localisync_sdk: ^0.1.0
+  yaml: ^3.1.3
+dev_dependencies:
+  test: ^1.31.0

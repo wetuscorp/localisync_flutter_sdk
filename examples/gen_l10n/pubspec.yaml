@@ -1,0 +1,32 @@
+name: localisync_gen_l10n
+publish_to: none
+version: 1.0.0+1
+resolution: workspace
+environment:
+  sdk: '>=3.12.0 <4.0.0'
+  flutter: '>=3.44.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  localisync_sdk: ^0.1.0
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+  localisync_generator: ^0.1.0
+flutter:
+  uses-material-design: true
+  generate: true
+  assets:
+    - licenses/Roboto-LICENSE.txt
+  fonts:
+    - family: Localisync Sans
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+        - asset: assets/fonts/Roboto-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Roboto-Bold.ttf
+          weight: 700

@@ -1,0 +1,13 @@
+name: localisync_flutter_workspace
+publish_to: none
+environment:
+  sdk: '>=3.12.0 <4.0.0'
+workspace:
+  - packages/localisync_sdk
+  - tool/generator
+  - examples/basic
+  - examples/gen_l10n
+
+dev_dependencies:
+  # Older frontend_server_client versions invoke a removed Dart SDK snapshot.
+  frontend_server_client: ^4.0.0

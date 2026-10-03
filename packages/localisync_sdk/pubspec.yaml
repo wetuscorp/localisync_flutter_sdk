@@ -1,0 +1,26 @@
+name: localisync_sdk
+description: Verified translation delivery for Flutter with synchronous ICU reads, signed updates, explicit fallback and durable offline cache.
+homepage: https://localisync.com
+documentation: https://docs.localisync.com/sdks/flutter/quick-start/
+issue_tracker: https://github.com/wetuscorp/localisync_flutter_sdk/issues
+version: 0.1.0
+repository: https://github.com/wetuscorp/localisync_flutter_sdk
+resolution: workspace
+environment:
+  sdk: '>=3.12.0 <4.0.0'
+  flutter: ">=3.44.0"
+dependencies:
+  flutter:
+    sdk: flutter
+  cryptography: ^2.9.0
+  intl: ">=0.20.2 <0.21.0"
+  pub_semver: ^2.2.1
+  http: ^1.6.0
+  path_provider: ^2.1.6
+  # Earlier transitive versions call Platform.packageRoot, removed from Dart.
+  platform: ^3.1.0
+  web: ^1.1.1
+dev_dependencies:
+  test: ^1.31.0
+  flutter_test:
+    sdk: flutter

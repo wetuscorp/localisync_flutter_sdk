@@ -1,0 +1,29 @@
+{
+  "@@locale": "tr",
+  "title": "Localisync çevirileri",
+  "greeting": "Merhaba {name}",
+  "@greeting": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "basket": "{count, plural, one {One item} other {# items}}",
+  "@basket": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
+  "date": "Date: {date}",
+  "@date": {
+    "placeholders": {
+      "date": {
+        "type": "DateTime",
+        "format": "yMd"
+      }
+    }
+  }
+}
