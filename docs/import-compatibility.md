@@ -8,8 +8,8 @@ sidebar:
 Advanced imports can retain literal tag text and contracts with parameters unused in one
 language. These changes keep the signed delivery and cache wire formats unchanged, but
 older validators can reject such messages. Do not treat the published `0.1.0` package as
-compatible merely because the wire version is the same. Compatible source changes are
-under validation; this guide does not announce a new package release.
+compatible merely because the wire version is the same. Use `localisync_sdk 0.1.1` or later with the matching tagged generator; version 0.1.1
+adds literal-tag and unused-declaration support.
 
 Before enabling this content for a distribution:
 

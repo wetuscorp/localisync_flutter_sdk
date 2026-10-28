@@ -16,9 +16,13 @@ import uuid
 root = Path(__file__).resolve().parents[1]
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--published-ref', help='Verify a published vX.Y.Z tag using hosted SDK dependencies, without overrides')
+parser.add_argument('--generator-ref', help='Optional immutable generator-vX.Y.Z tag with a published runtime')
 args = parser.parse_args()
 if args.published_ref and not re.fullmatch(r'v[0-9]+\.[0-9]+\.[0-9]+', args.published_ref):
     parser.error('--published-ref must be an immutable vX.Y.Z release tag')
+if args.generator_ref and (not args.published_ref or not re.fullmatch(r'generator-v[0-9]+\.[0-9]+\.[0-9]+', args.generator_ref)):
+    parser.error('--generator-ref requires --published-ref and an immutable generator-vX.Y.Z tag')
+generator_ref = args.generator_ref or args.published_ref
 repository = root if (root / 'test/sdk-protocol').is_dir() else root.parents[1]
 flutter = os.environ.get('LOCALISYNC_FLUTTER_BIN') or shutil.which('flutter')
 if not flutter:
@@ -32,7 +36,7 @@ sdk_dependency = (f'  localisync_sdk: {args.published_ref[1:]}\n' if args.publis
 generator_dependency = (f'''  localisync_generator:
     git:
       url: https://github.com/wetuscorp/localisync_flutter_sdk.git
-      ref: {args.published_ref}
+      ref: {generator_ref}
       path: tool/generator
 ''' if args.published_ref else f'''  localisync_generator:
     path: {root / 'tool/generator'}
@@ -104,6 +108,6 @@ void main() {
 subprocess.run([flutter, 'test', 'integration_test/first_test.dart', '-d', 'macos'], cwd=app, check=True)
 print(json.dumps({'seconds': round(time.monotonic() - started, 3),
                   'mode': 'published SDK and tagged Git generator' if args.published_ref else 'local path rehearsal with SDK override',
-                  'publishedRef': args.published_ref, 'dependencyOverrides': not bool(args.published_ref),
+                  'publishedRef': args.published_ref, 'generatorRef': generator_ref, 'dependencyOverrides': not bool(args.published_ref),
                   'prerequisites': 'installed Flutter/Xcode; warm package cache; bundled offline first translation',
                   'application': str(app.relative_to(repository))}))

@@ -402,6 +402,11 @@ String generateAdapter(
     throw const FormatException(
       'Expected one extensible generated localization class.',
     );
+  final body = classes.single.body;
+  if (body is! BlockClassBody)
+    throw const FormatException(
+      'Expected a generated localization class with a block body.',
+    );
   final definitions = {
     for (final e in input.definitions) dartName(e.key, input.names): e,
   };
@@ -414,10 +419,9 @@ String generateAdapter(
   out.writeln(
     'class _Localisync$className extends $className {\n  _Localisync$className(this.bundled, this.client, this.tag) : super(bundled.localeName);\n  final $className bundled;\n  final LocalisyncClient client;\n  final String tag;',
   );
-  for (final method
-      in classes.single.body.members.whereType<MethodDeclaration>().where(
-        (m) => m.isAbstract && !m.isStatic,
-      )) {
+  for (final method in body.members.whereType<MethodDeclaration>().where(
+    (m) => m.isAbstract && !m.isStatic,
+  )) {
     if (method.returnType?.toSource() != 'String' || method.isSetter)
       throw const FormatException('Expected generated String accessors.');
     final name = method.name.lexeme,

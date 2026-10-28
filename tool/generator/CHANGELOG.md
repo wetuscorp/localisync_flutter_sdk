@@ -1,3 +1,8 @@
+## 0.1.2
+
+- Support analyzer 10.x through 12.x through the public block-class AST API.
+- Keep the generator development-only and compatible with runtime 0.1.1.
+
 ## 0.1.1
 
 - Preserve literal markup as inert translation text.

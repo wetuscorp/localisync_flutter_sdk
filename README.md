@@ -3,9 +3,10 @@
 Verified translation delivery, synchronous in-memory reads and durable offline cache.
 The single runtime package is **localisync_sdk**. Requires Flutter 3.44 / Dart 3.12 or later.
 
-This checkout contains the 0.1.1 release candidate sources. Check
-[pub.dev](https://pub.dev/packages/localisync_sdk) and GitHub Releases for published versions;
-repository availability alone does not establish registry publication.
+Runtime 0.1.1 is published on [pub.dev](https://pub.dev/packages/localisync_sdk)
+under wetus.co. The immutable `v0.1.1` source passed public CI and physical iPhone checks.
+The development generator on main additionally prepares analyzer 10–12 compatibility;
+use a validated immutable tag for application dependencies.
 
 ## Getting started
 
@@ -13,7 +14,7 @@ Run `flutter pub get` in this checkout. The [basic example](examples/basic) uses
 accessors; [gen_l10n](examples/gen_l10n) preserves existing AppLocalizations calls.
 Follow the [quick start](https://docs.localisync.com/sdks/flutter/quick-start/).
 
-After registry publication, normal installation is `flutter pub add localisync_sdk`.
+Normal installation is `flutter pub add localisync_sdk`.
 Optional generation stays in `dev_dependencies`, pinned to the release tag:
 
 ```yaml
@@ -26,7 +27,7 @@ dev_dependencies:
 ```
 
 The generator is not published to pub.dev and is not required for runtime translation.
-The tag above becomes usable only after release validation is complete.
+The `v0.1.1` generator requires analyzer 12.x.
 
 ## Validation
 
