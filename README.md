@@ -5,8 +5,8 @@ The single runtime package is **localisync_sdk**. Requires Flutter 3.44 / Dart 3
 
 Runtime 0.1.1 is published on [pub.dev](https://pub.dev/packages/localisync_sdk)
 under wetus.co. The immutable `v0.1.1` source passed public CI and physical iPhone checks.
-The development generator on main additionally prepares analyzer 10–12 compatibility;
-use a validated immutable tag for application dependencies.
+Generator 0.1.2 is available at the immutable `generator-v0.1.2` tag and supports
+analyzer `>=10.0.0 <13.0.0`. It uses runtime 0.1.1; no analyzer override is needed.
 
 ## Getting started
 
@@ -22,7 +22,7 @@ dev_dependencies:
   localisync_generator:
     git:
       url: https://github.com/wetuscorp/localisync_flutter_sdk.git
-      ref: v0.1.1
+      ref: generator-v0.1.2
       path: tool/generator
 ```
 
