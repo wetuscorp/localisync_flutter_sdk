@@ -3,7 +3,7 @@ description: Verified translation delivery for Flutter with synchronous ICU read
 homepage: https://localisync.com
 documentation: https://docs.localisync.com/sdks/flutter/quick-start/
 issue_tracker: https://github.com/wetuscorp/localisync_flutter_sdk/issues
-version: 0.1.0
+version: 0.1.1
 repository: https://github.com/wetuscorp/localisync_flutter_sdk
 resolution: workspace
 environment:

@@ -47,6 +47,27 @@ void main() {
       expect(source, contains(r'Price \$5'));
     },
   );
+  test(
+    'literal tags and unused declarations survive baseline generation',
+    () async {
+      final input = await readArbInput(
+        await configuration({
+          'hello': '<a href="/help">Hello {name}</a>',
+          '@hello': {
+            'placeholders': {
+              'name': {'type': 'String'},
+              'count': {'type': 'int'},
+            },
+          },
+        }),
+      );
+      final source = generateTyped(input);
+      expect(parseString(content: source).errors, isEmpty);
+      expect(source, contains('required String name'));
+      expect(source, contains('required num count'));
+      expect(source, contains('<a href='));
+    },
+  );
   test('invalid names require mapping and collisions are rejected', () async {
     await expectLater(
       readArbInput(await configuration({'hello.world': 'Hello'})),

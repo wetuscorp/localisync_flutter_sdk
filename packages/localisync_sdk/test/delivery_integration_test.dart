@@ -67,6 +67,13 @@ void main() {
         reason: result.failure?.toString(),
       );
       expect(client.translate('welcome'), input['expected']);
+      expect(
+        client.translate(
+          'imported_message',
+          arguments: {'name': 'Reader', 'unused': 2},
+        ),
+        '<a href="/help">Hello Reader</a>',
+      );
       expect(client.status.revision, input['revision']);
       expect(client.releaseId, input['releaseId']);
       expect(client.resolve('welcome').source, ContentSource.remote);

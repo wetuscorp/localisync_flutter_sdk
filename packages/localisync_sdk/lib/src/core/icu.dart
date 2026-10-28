@@ -144,7 +144,6 @@ final class _IcuReader {
   }
   final String source;
   final Map<String, ParameterType> contract;
-  final used = <String>{};
   int index = 0, nodes = 0;
   Never fail() => throw const LocalisyncException(
     FailureCode.protocol,
@@ -174,7 +173,7 @@ final class _IcuReader {
 
   List<MessageNode> parse() {
     final result = message(0, false, false);
-    if (index != source.length || used.length != contract.length) fail();
+    if (index != source.length) fail();
     return result;
   }
 
@@ -238,8 +237,6 @@ final class _IcuReader {
         add(result, const PoundNode());
         continue;
       }
-      if (c == '<' && RegExp(r'^</?[A-Za-z]').hasMatch(source.substring(index)))
-        fail();
       if (c != '{') {
         buffer.write(c);
         index++;
@@ -250,7 +247,6 @@ final class _IcuReader {
       if (depth >= 10) fail();
       final name = identifier();
       if (!contract.containsKey(name)) fail();
-      used.add(name);
       space();
       if (take('}')) {
         add(result, ArgumentNode(name));

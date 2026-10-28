@@ -3,7 +3,7 @@
 Verified translation delivery, synchronous in-memory reads and durable offline cache.
 The single runtime package is **localisync_sdk**. Requires Flutter 3.44 / Dart 3.12 or later.
 
-This checkout contains the 0.1.0 release sources. Check
+This checkout contains the 0.1.1 release candidate sources. Check
 [pub.dev](https://pub.dev/packages/localisync_sdk) and GitHub Releases for published versions;
 repository availability alone does not establish registry publication.
 
@@ -21,7 +21,7 @@ dev_dependencies:
   localisync_generator:
     git:
       url: https://github.com/wetuscorp/localisync_flutter_sdk.git
-      ref: v0.1.0
+      ref: v0.1.1
       path: tool/generator
 ```
 

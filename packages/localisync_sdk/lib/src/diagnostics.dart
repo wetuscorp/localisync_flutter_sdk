@@ -73,7 +73,7 @@ final class SdkDiagnosticReporter implements DiagnosticSink {
           'id': _id(),
           'observedAt': item.time.toUtc().toIso8601String(),
           'sdk': 'flutter',
-          'sdkVersion': '0.1.0',
+          'sdkVersion': '0.1.1',
           'appVersion': appVersion,
           'code': item.code.name,
           'stage': item.stage.name,

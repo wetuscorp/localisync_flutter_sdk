@@ -1559,13 +1559,59 @@
         }
       ],
       "expected": "other"
+    },
+    {
+      "message": "<link href=\"/help\">Hello {name}</link><br>",
+      "locale": "en",
+      "args": {
+        "name": "Ada",
+        "count": 2
+      },
+      "parameters": [
+        {
+          "name": "name",
+          "type": "text"
+        },
+        {
+          "name": "count",
+          "type": "number"
+        }
+      ],
+      "expected": "<link href=\"/help\">Hello Ada</link><br>"
+    },
+    {
+      "message": "No arguments in this language",
+      "locale": "de",
+      "args": {
+        "name": "Ada"
+      },
+      "parameters": [
+        {
+          "name": "name",
+          "type": "text"
+        }
+      ],
+      "expected": "No arguments in this language"
+    },
+    {
+      "message": "<b>{n}</b>",
+      "locale": "en",
+      "args": {
+        "n": 3
+      },
+      "parameters": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "expected": "<b>3</b>"
     }
   ],
   "invalid": [
     "{n, plural, =1.5 {Bad} other {#}}",
     "{n, plural, offset:1.5 other {#}}",
     "{n, number}",
-    "<b>{n}</b>",
     "{n, plural, one {One}}",
     "{n, plural, other {#} other {duplicate}}"
   ]

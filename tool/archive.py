@@ -7,6 +7,7 @@ intentionally absent from the package archive.
 import hashlib
 import json
 import os
+import re
 from pathlib import Path
 import shutil
 import subprocess
@@ -18,7 +19,10 @@ package = root / 'packages/localisync_sdk'
 flutter = Path(os.environ.get('LOCALISYNC_FLUTTER_BIN') or shutil.which('flutter')).resolve()
 output = (root if (root / 'test/sdk-protocol').is_dir() else root.parents[1]) / '.local/flutter-validation'
 output.mkdir(parents=True, exist_ok=True)
-archive = output / 'localisync_sdk-0.1.0.tar.gz'
+version = re.search(r'^version: ([0-9]+\.[0-9]+\.[0-9]+)$', (package / 'pubspec.yaml').read_text(), re.M)
+if not version:
+    raise SystemExit('Expected a stable package version')
+archive = output / f'localisync_sdk-{version.group(1)}.tar.gz'
 allowed = {'README.md', 'CHANGELOG.md', 'LICENSE', 'NOTICE', 'pubspec.yaml'}
 files = sorted(p for p in package.rglob('*') if p.is_file() and
                (p.relative_to(package).parts[0] in {'lib', 'licenses'} or
